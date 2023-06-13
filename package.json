@@ -1,6 +1,6 @@
 {
   "name": "@cicara/vite-plugin-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "import yaml config",
   "type": "module",
   "license": "MIT",
