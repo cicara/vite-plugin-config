@@ -1,0 +1,1 @@
+# @cicara/vite-plugin-config

@@ -1,0 +1,62 @@
+{
+  "name": "@cicara/vite-plugin-config",
+  "version": "0.0.0",
+  "description": "import yaml config",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsup --watch src",
+    "example:dev": "pnpm -C example run dev",
+    "example:build": "pnpm run build && pnpm -C example run build",
+    "build": "tsup"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./config": {
+      "type": "./config.d.ts"
+    },
+    "./client": {
+      "types": "./client.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "*.d.ts"
+  ],
+  "peerDependencies": {
+    "vite": "^2.6.0 || ^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "5.0.2",
+    "yaml": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "tsup": "6.5.0",
+    "typescript": "4.9.4",
+    "vite": "4.0.3"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "author": "hungtcs <hungtcs@outlook.com> (https://github.com/hungtcs)",
+  "keywords": [
+    "vite"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cicara/vite-plugin-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cicara/vite-plugin-config/issues"
+  },
+  "homepage": "https://github.com/cicara/vite-plugin-config#readme"
+}
