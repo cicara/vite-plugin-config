@@ -1,4 +1,4 @@
-import config from '@cicara/vite-plugin-config/config';
+import config from '#config';
 
 config.some;
 config.number;

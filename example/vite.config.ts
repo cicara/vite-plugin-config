@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     config({
+      name: '#config',
       file: './config.yaml',
       validate(value) {
         // throw new Error("xxx");

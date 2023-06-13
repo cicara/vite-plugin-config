@@ -1,9 +1,6 @@
 /// <reference types="vite/client" />
 
-import type { Config } from './config';
-
-declare module '@cicara/vite-plugin-config/config' {
-  export interface DefaultConfigObject extends Config {
-
-  }
+declare module '#config' {
+  const config: import('./config').Config;
+  export default config;
 }
