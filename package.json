@@ -18,9 +18,6 @@
     },
     "./config": {
       "type": "./config.d.ts"
-    },
-    "./client": {
-      "types": "./client.d.ts"
     }
   },
   "main": "./dist/index.cjs",
